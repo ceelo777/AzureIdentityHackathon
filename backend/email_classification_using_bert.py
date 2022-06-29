@@ -239,8 +239,13 @@ import datetime
 
 
 log_dir = "logs/fit/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+checkpoint_path = "training_2/cp-{epoch:04d}.ckpt"
 tensorboard_callback=tf.keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=1)
-
+cp_callback = tf.keras.callbacks.ModelCheckpoint(
+    filepath=checkpoint_path, 
+    verbose=1, 
+    save_weights_only=True,
+    save_freq=5)
 """##  Training Model
 - Recomended to use `GPU` - providing so many training data
 
@@ -250,8 +255,8 @@ tensorboard_callback=tf.keras.callbacks.TensorBoard(log_dir=log_dir, histogram_f
 
 # Commented out IPython magic to ensure Python compatibility.
 # %tensorboard --logdir logs/fit
-
-history = model.fit(X_train, y_train, epochs = 10 , callbacks = [tensorboard_callback])
+model.save_weights(checkpoint_path.format(epoch=0))
+history = model.fit(X_train, y_train, epochs = 10 , callbacks = [tensorboard_callback, cp_callback])
 
 """# Model Evaluation 
 
@@ -279,6 +284,8 @@ import numpy as np
 
 y_pred = np.where(y_pred>0.5,1,0 )
 y_pred
+
+model.save("mymodel.h5")
 
 """**Not so understandable so plotting confusion matrix and classification report  for good visualization**"""
 
