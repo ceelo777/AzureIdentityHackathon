@@ -36,13 +36,17 @@ class InputPage extends React.Component {
 
     render() {
       return (
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Email:
-            <textarea value={this.state.value} onChange={this.handleChange} />
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
+        <div className="form-div">
+            <div className="title">Try sending an email...</div>
+            <form onSubmit={this.handleSubmit}>                
+                <label>                    
+                    <textarea value={this.state.value} onChange={this.handleChange} />
+                </label>
+                <div className="submit-button">
+                    <input type="submit" value="Submit" />
+                </div>
+            </form>
+        </div>
       );
     }
   }
