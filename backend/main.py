@@ -5,6 +5,7 @@ def main():
     print('Python Graph Tutorial\n')
 
     # Load settings
+    print("Reached1")
     config = configparser.ConfigParser()
     config.read(['config.cfg', 'config.dev.cfg'])
     azure_settings = config['azure']
@@ -44,16 +45,12 @@ def main():
         else:
             print('Invalid choice!\n')
 
-
-def greet_user(graph: Graph):
-    # TODO
-    return
-
 def display_access_token(graph: Graph):
     token = graph.get_user_token()
     print('User token:', token, '\n')    
 
 def list_inbox(graph: Graph):
+    print("LISTING INBOX")
     message_page = graph.get_inbox()
 
     # Output each message's details
