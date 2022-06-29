@@ -5,15 +5,21 @@ class InputPage extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-        value: 'Please input an email!'
-      };
+        value: 'Please input an email!',
+        regEx: new RegExp("^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$")
+      }
   
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
     }
   
-    handleChange(event) {
+    handleChange(event) {      
       this.setState({value: event.target.value});
+      this.state.value.split(" ").forEach(word => {
+        if (this.state.regEx.test(word)) {
+            console.log("Password found: ", word);
+        }
+      });
     }
   
     handleSubmit(event) {
@@ -27,7 +33,7 @@ class InputPage extends React.Component {
         .then(data => console.log(data));
       event.preventDefault();
     }
-  
+
     render() {
       return (
         <form onSubmit={this.handleSubmit}>
