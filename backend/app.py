@@ -29,7 +29,7 @@ def receive():
 @app.route("/parseInbox", methods=["POST"])
 @cross_origin()
 def flaggedEmails(): 
-    #receives array of emails, returns two dictionaries of flagged vs. unflagged
+    #receives array of emails, returns three dictionary/arrays of all emails marked red or green, and flagged vs. unflagged
     model = load_model("mymodel.h5")
     model._make_predict_function()
     good_emails = []
@@ -44,8 +44,14 @@ def flaggedEmails():
                 bad_emails.append(email)
             else: 
                 good_emails.append(email)
-
-    return (good_emails, bad_emails)
+    mydict = {}
+    for email in myEmails: 
+        if email in good_emails: 
+            mydict[email] = 'green'
+        else: 
+            mydict[email] = 'red'
+    
+    return (mydict, good_emails, bad_emails)
 
 @app.route("/showInbox", methods=["POST"])
 @cross_origin()
