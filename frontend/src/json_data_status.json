@@ -1,1 +1,6 @@
-{"New sign-in detected for your Microsoft account": "red", "Testing Microsoft Graph": "green", "Save and share simply with OneDrive and your Microsoft account": "green", "Welcome to your new Outlook.com account": "green"}
+{
+    "New sign-in detected for your Microsoft account": "red",
+    "Testing Microsoft Graph": "green",
+    "Save and share simply with OneDrive and your Microsoft account": "green",
+    "Welcome to your new Outlook.com account": "green"
+}

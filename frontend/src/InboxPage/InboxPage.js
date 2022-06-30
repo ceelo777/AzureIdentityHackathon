@@ -54,11 +54,10 @@ class InboxPage extends React.Component {
     }
     data.value.forEach(entry => {
       listItems.push(        
-          <tr>
+          <tr className={this.state.status[keys[idx]]}>
             <td>{entry.from.emailAddress.name}</td>              
             <td>{entry.from.emailAddress.address}</td>                      
             <td>{entry.subject}</td>                        
-            <td>{this.state.status[keys[idx]]}</td>
           </tr>  
       )        
       idx++;

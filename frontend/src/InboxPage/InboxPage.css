@@ -20,7 +20,15 @@ table {
 tr {
     border: solid;
     height: 2vw;
-    border-width: 1px 0;
+    border-width: 1px 0;    
+}
+
+tr.red {
+    background-color: #FF7F7F;
+}
+
+tr.green {
+    background-color: #87CEFA;
 }
 
 .submit-div-button {    

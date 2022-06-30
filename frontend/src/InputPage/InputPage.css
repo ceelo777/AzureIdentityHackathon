@@ -23,7 +23,8 @@ textarea {
 }
 
 body {
-    background-image: url("../assets/background.jpg");
+    background-size: 100%;
+    background-image: url("../assets/public/bg1.jpeg");
 }
 
 input {
