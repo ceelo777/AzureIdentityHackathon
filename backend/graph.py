@@ -15,12 +15,8 @@ class Graph:
         client_id = self.settings['clientId']
         tenant_id = self.settings['authTenant']
         graph_scopes = self.settings['graphUserScopes'].split(' ')
-
-        print("Graph Object Created")
-        self.device_code_credential = DeviceCodeCredential(client_id, tenant_id = tenant_id)        
-        print("After Device Code Credential")
-        self.user_client = GraphClient(credential=self.device_code_credential, scopes=graph_scopes)
-        print("After User Client")
+        self.device_code_credential = DeviceCodeCredential(client_id, tenant_id = tenant_id)                
+        self.user_client = GraphClient(credential=self.device_code_credential, scopes=graph_scopes)        
     
     def ensure_graph_for_app_only_auth(self):
         if not hasattr(self, 'client_credential'):
