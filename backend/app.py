@@ -41,7 +41,12 @@ def flaggedEmails():
     
     if request.method == 'GET': 
         #myEmails = request.json['text']
-        myEmails = ['hello my name is chris']
+        myEmails = []
+        data = None
+        with open('json_data.json') as f:
+            data = json.load(f)
+            for val in data.value:
+                myEmails.append(val.subject)
         for email in myEmails: 
             email = np.array([email])
             preds = model.predict(email)
