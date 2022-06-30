@@ -5,14 +5,25 @@ class InboxPage extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-        value: 'Please input an email!',
-        regEx: new RegExp("^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$")
+        entries: []
       }
+      
+      const requestOptions = {
+        mode: 'cors',
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' },
+      };
+
+      fetch('http://localhost:5000/parseInbox', requestOptions)
+        .then(response => {
+            console.log("Inbox: ", response);
+        });
     }
 
     render() {
       return (
         <div className="form-div">
+
         </div>
       );
     }

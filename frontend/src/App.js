@@ -17,7 +17,7 @@ function App() {
             <Link to="/inputPage">Send Email</Link>
           </div>
           <div className="nav-scan-inbox">
-            <Link to="/scanInbox">Scan Inbox</Link>
+            <Link to="/showInbox">Scan Inbox</Link>
           </div>
 
           {/* A <Switch> looks through its children <Route>s and
@@ -25,7 +25,7 @@ function App() {
         </div>
         <Routes>
             <Route path="/inputPage" element={<InputPage />} />
-            <Route path="/users" element={<InboxPage />} />          
+            <Route path="/showInbox" element={<InboxPage />} />          
         </Routes>
       </div>
     </Router>
