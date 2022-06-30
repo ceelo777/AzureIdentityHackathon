@@ -6,6 +6,7 @@ import configparser
 from graph import Graph
 from main import greet_user
 import json
+import re
 # import tensorflow as tf 
 # from tensorflow import keras 
 # from keras.models import load_model
@@ -20,14 +21,32 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 @app.route("/submitText", methods=["POST"])
 @cross_origin()
 def receive():
-    # global model
-    # model = load_model("mymodel.h5")
-    # model._make_predict_function()
 
-    if request.method == 'POST':         
-        print(request.json['text'])
+    model = load_model("mymodel.h5", custom_objects={'KerasLayer':hub.KerasLayer})
+    model.make_predict_function()
+    myEmail = request.json['text']
+    preds = model.predict(myEmail)
+    
+    if preds[0][0] > 0.5:
+        isSpam = True
+    else:
+        isSpam = False
+    
+    isPasswordDict = {}
+    
+    words = myEmail.split(' ')
+    for word in words:
+        if re.match("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]).{8,32}$"):
+            isPasswordDict[word] = True
+        else:
+            isPasswordDict[word] = False
+            
+    print(isPasswordDict)
+    
+#    if request.method == 'POST':
+#        print(request.json['text'])
 
-    return "Hello, World!"
+    return (isSpam, isPasswordDict)
 
 @app.route("/parseInbox", methods=["GET"])
 @cross_origin()
