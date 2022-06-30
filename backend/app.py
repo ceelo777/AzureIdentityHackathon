@@ -60,15 +60,13 @@ def flaggedEmails():
 @app.route("/showInbox", methods=["GET"])
 @cross_origin()
 def showEmails(): 
+    resp = graph.get_inbox()
+    print("Inbox: ", resp)
+    return resp
+
+if __name__ == "__main__":
     config = configparser.ConfigParser()
     config.read(['config.cfg', 'config.dev.cfg'])
     azure_settings = config['azure']
-
     graph: Graph = Graph(azure_settings)
-
-    greet_user(graph)
-
-    return graph.get_inbox()
-
-if __name__ == "__main__":
     app.run()

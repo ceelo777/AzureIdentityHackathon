@@ -13,14 +13,13 @@ class InputPage extends React.Component {
       this.handleSubmit = this.handleSubmit.bind(this);
     }
   
-    handleChange(event) {      
+    handleChange(event) {            
       this.setState({value: event.target.value});
       this.state.value.split(" ").forEach(word => {
         if (this.state.regEx.test(word)) {
             console.log("Password found: ", word);
         }
       });
-      this.setState({value: "<div>hello</div>"});      
     }
   
     handleSubmit(event) {
@@ -39,10 +38,8 @@ class InputPage extends React.Component {
       return (
         <div className="form-div">
             <div className="title">Try sending an email...</div>
-            <form onSubmit={this.handleSubmit}>                
-                <label>                    
-                    <textarea value={this.state.value} onChange={this.handleChange} />
-                </label>
+            <form onSubmit={this.handleSubmit}>                                
+                <textarea value={this.state.value} onChange={this.handleChange}></textarea>
                 <div className="submit-button">
                     <input type="submit" value="Submit" />
                 </div>
