@@ -98,4 +98,4 @@ def greet_user(graph: Graph):
     print('Email:', user['mail'] or user['userPrincipalName'], '\n')
 
 
-main()
+#main()
