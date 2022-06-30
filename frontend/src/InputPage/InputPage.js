@@ -14,12 +14,7 @@ class InputPage extends React.Component {
     }
   
     handleChange(event) {            
-      this.setState({value: event.target.value});
-      this.state.value.split(" ").forEach(word => {
-        if (this.state.regEx.test(word)) {
-            console.log("Password found: ", word);
-        }
-      });
+      this.setState({value: event.target.value});      
     }
   
     handleSubmit(event) {
@@ -30,20 +25,24 @@ class InputPage extends React.Component {
         body: JSON.stringify( { text: this.state.value } )
       };
       fetch('http://localhost:5000/submitText', requestOptions)
-        .then(response => console.log("Response: ", response))
+        .then(response => {return response.json();})
+        .then(responseData => console.log("Response Data: ", responseData));
       event.preventDefault();
     }
 
     render() {
       return (
-        <div className="form-div">
-            <div className="title">Try sending an email...</div>
-            <form onSubmit={this.handleSubmit}>                                
-                <textarea value={this.state.value} onChange={this.handleChange}></textarea>
-                <div className="submit-button">
-                    <input type="submit" value="Submit" />
-                </div>
-            </form>
+        <div className="component-div">                    
+          <div className="form-div">              
+              <form onSubmit={this.handleSubmit}>                                
+                  <textarea value={this.state.value} onChange={this.handleChange}></textarea>
+                  <div className="submit-button">
+                      <input type="submit" value="Submit" />
+                  </div>
+              </form>
+          </div>
+          <div className="output-div">
+          </div>
         </div>
       );
     }

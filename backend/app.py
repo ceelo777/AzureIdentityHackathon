@@ -22,21 +22,23 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 @cross_origin()
 def receive():
 
-    model = load_model("mymodel.h5", custom_objects={'KerasLayer':hub.KerasLayer})
-    model.make_predict_function()
+    # model = load_model("mymodel.h5", custom_objects={'KerasLayer':hub.KerasLayer})
+    # model.make_predict_function()
     myEmail = request.json['text']
-    preds = model.predict(myEmail)
+    # preds = model.predict(myEmail)
     
-    if preds[0][0] > 0.5:
-        isSpam = True
-    else:
-        isSpam = False
+    # if preds[0][0] > 0.5:
+    # isSpam = True
+    # else:
+    # isSpam = False
     
+    isSpam = False
     isPasswordDict = {}
     
     words = myEmail.split(' ')
+    isPasswordDict["spam"] = isSpam
     for word in words:
-        if re.match("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]).{8,32}$"):
+        if re.match(r"^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$", word):
             isPasswordDict[word] = True
         else:
             isPasswordDict[word] = False
@@ -46,7 +48,7 @@ def receive():
 #    if request.method == 'POST':
 #        print(request.json['text'])
 
-    return (isSpam, isPasswordDict)
+    return isPasswordDict
 
 @app.route("/parseInbox", methods=["GET"])
 @cross_origin()

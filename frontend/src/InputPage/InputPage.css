@@ -1,7 +1,7 @@
 .form-div {
     height: 500px;
     width: 500px;    
-    margin: 10% auto auto auto;
+    /* margin: 10% auto auto auto;    */
 }
 
 form {
@@ -18,7 +18,7 @@ textarea {
 .title {
     width: 100%;
     font-size: 20px;
-    margin-bottom: 3%;
+    margin-bottom: 3%;    
     font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
@@ -46,4 +46,23 @@ input {
     width: 40%;
     height: 10%;
     margin: 5% auto auto auto;
+}
+
+.output-div {
+    background-color: lightgray;
+    border-color: black;
+    border-style: solid;
+    box-shadow: 20px 20px;
+    border-width: 1px;
+    height: 500px;
+    width: 500px;
+}
+
+.component-div {
+    display: flex;
+    flex-direction: row;    
+    margin: 10% auto auto auto;
+    justify-content: center;    
+    align-items: center;
+    gap: 5%;
 }
