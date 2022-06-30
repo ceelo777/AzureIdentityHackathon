@@ -1,0 +1,278 @@
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('testceelo777%40outlook.com')/mailFolders('inbox')/messages(from,isRead,receivedDateTime,subject)",
+    "value": [
+        {
+            "@odata.etag": "W/\"CQAAABYAAADCrlVr7+RgQ71qiTgIRU65AAADpyFJ\"",
+            "id": "AQMkADAwATMwMAItNGZlYS05MWM2LTAwAi0wMAoARgAAA96mQ8Wgr4FDqvXbXsgOXvwHAMKuVWvv5GBDvWqJOAhFTrkAAAIBDAAAAMKuVWvv5GBDvWqJOAhFTrkAAAADqHGwAAAA",
+            "receivedDateTime": "2022-06-30T08:15:26Z",
+            "subject": "New sign-in detected for your Microsoft account",
+            "isRead": false,
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft account team",
+                    "address": "account-security-noreply@accountprotection.microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADCrlVr7+RgQ71qiTgIRU65AAADpyFD\"",
+            "id": "AQMkADAwATMwMAItNGZlYS05MWM2LTAwAi0wMAoARgAAA96mQ8Wgr4FDqvXbXsgOXvwHAMKuVWvv5GBDvWqJOAhFTrkAAAIBDAAAAMKuVWvv5GBDvWqJOAhFTrkAAAADqHGvAAAA",
+            "receivedDateTime": "2022-06-30T08:05:23Z",
+            "subject": "New sign-in detected for your Microsoft account",
+            "isRead": false,
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft account team",
+                    "address": "account-security-noreply@accountprotection.microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADCrlVr7+RgQ71qiTgIRU65AAADpyE9\"",
+            "id": "AQMkADAwATMwMAItNGZlYS05MWM2LTAwAi0wMAoARgAAA96mQ8Wgr4FDqvXbXsgOXvwHAMKuVWvv5GBDvWqJOAhFTrkAAAIBDAAAAMKuVWvv5GBDvWqJOAhFTrkAAAADqHGuAAAA",
+            "receivedDateTime": "2022-06-30T07:56:32Z",
+            "subject": "New sign-in detected for your Microsoft account",
+            "isRead": false,
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft account team",
+                    "address": "account-security-noreply@accountprotection.microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADCrlVr7+RgQ71qiTgIRU65AAADpyEc\"",
+            "id": "AQMkADAwATMwMAItNGZlYS05MWM2LTAwAi0wMAoARgAAA96mQ8Wgr4FDqvXbXsgOXvwHAMKuVWvv5GBDvWqJOAhFTrkAAAIBDAAAAMKuVWvv5GBDvWqJOAhFTrkAAAADqHGtAAAA",
+            "receivedDateTime": "2022-06-30T07:51:46Z",
+            "subject": "New sign-in detected for your Microsoft account",
+            "isRead": false,
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft account team",
+                    "address": "account-security-noreply@accountprotection.microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADCrlVr7+RgQ71qiTgIRU65AAADpyEW\"",
+            "id": "AQMkADAwATMwMAItNGZlYS05MWM2LTAwAi0wMAoARgAAA96mQ8Wgr4FDqvXbXsgOXvwHAMKuVWvv5GBDvWqJOAhFTrkAAAIBDAAAAMKuVWvv5GBDvWqJOAhFTrkAAAADqHGsAAAA",
+            "receivedDateTime": "2022-06-30T07:51:16Z",
+            "subject": "New sign-in detected for your Microsoft account",
+            "isRead": false,
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft account team",
+                    "address": "account-security-noreply@accountprotection.microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADCrlVr7+RgQ71qiTgIRU65AAADpyEQ\"",
+            "id": "AQMkADAwATMwMAItNGZlYS05MWM2LTAwAi0wMAoARgAAA96mQ8Wgr4FDqvXbXsgOXvwHAMKuVWvv5GBDvWqJOAhFTrkAAAIBDAAAAMKuVWvv5GBDvWqJOAhFTrkAAAADqHGrAAAA",
+            "receivedDateTime": "2022-06-30T07:49:46Z",
+            "subject": "New sign-in detected for your Microsoft account",
+            "isRead": false,
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft account team",
+                    "address": "account-security-noreply@accountprotection.microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADCrlVr7+RgQ71qiTgIRU65AAADpyEK\"",
+            "id": "AQMkADAwATMwMAItNGZlYS05MWM2LTAwAi0wMAoARgAAA96mQ8Wgr4FDqvXbXsgOXvwHAMKuVWvv5GBDvWqJOAhFTrkAAAIBDAAAAMKuVWvv5GBDvWqJOAhFTrkAAAADqHGqAAAA",
+            "receivedDateTime": "2022-06-30T07:48:02Z",
+            "subject": "New sign-in detected for your Microsoft account",
+            "isRead": false,
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft account team",
+                    "address": "account-security-noreply@accountprotection.microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADCrlVr7+RgQ71qiTgIRU65AAADpx9P\"",
+            "id": "AQMkADAwATMwMAItNGZlYS05MWM2LTAwAi0wMAoARgAAA96mQ8Wgr4FDqvXbXsgOXvwHAMKuVWvv5GBDvWqJOAhFTrkAAAIBDAAAAMKuVWvv5GBDvWqJOAhFTrkAAAADqHGoAAAA",
+            "receivedDateTime": "2022-06-30T07:43:15Z",
+            "subject": "New sign-in detected for your Microsoft account",
+            "isRead": true,
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft account team",
+                    "address": "account-security-noreply@accountprotection.microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADCrlVr7+RgQ71qiTgIRU65AAADpx9J\"",
+            "id": "AQMkADAwATMwMAItNGZlYS05MWM2LTAwAi0wMAoARgAAA96mQ8Wgr4FDqvXbXsgOXvwHAMKuVWvv5GBDvWqJOAhFTrkAAAIBDAAAAMKuVWvv5GBDvWqJOAhFTrkAAAADqHGnAAAA",
+            "receivedDateTime": "2022-06-30T07:40:19Z",
+            "subject": "New sign-in detected for your Microsoft account",
+            "isRead": false,
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft account team",
+                    "address": "account-security-noreply@accountprotection.microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADCrlVr7+RgQ71qiTgIRU65AAADpx1V\"",
+            "id": "AQMkADAwATMwMAItNGZlYS05MWM2LTAwAi0wMAoARgAAA96mQ8Wgr4FDqvXbXsgOXvwHAMKuVWvv5GBDvWqJOAhFTrkAAAIBDAAAAMKuVWvv5GBDvWqJOAhFTrkAAAADqHGmAAAA",
+            "receivedDateTime": "2022-06-30T07:37:13Z",
+            "subject": "New sign-in detected for your Microsoft account",
+            "isRead": false,
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft account team",
+                    "address": "account-security-noreply@accountprotection.microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADCrlVr7+RgQ71qiTgIRU65AAADpxtt\"",
+            "id": "AQMkADAwATMwMAItNGZlYS05MWM2LTAwAi0wMAoARgAAA96mQ8Wgr4FDqvXbXsgOXvwHAMKuVWvv5GBDvWqJOAhFTrkAAAIBDAAAAMKuVWvv5GBDvWqJOAhFTrkAAAADqHGlAAAA",
+            "receivedDateTime": "2022-06-30T07:18:41Z",
+            "subject": "New sign-in detected for your Microsoft account",
+            "isRead": false,
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft account team",
+                    "address": "account-security-noreply@accountprotection.microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADCrlVr7+RgQ71qiTgIRU65AAADpxtn\"",
+            "id": "AQMkADAwATMwMAItNGZlYS05MWM2LTAwAi0wMAoARgAAA96mQ8Wgr4FDqvXbXsgOXvwHAMKuVWvv5GBDvWqJOAhFTrkAAAIBDAAAAMKuVWvv5GBDvWqJOAhFTrkAAAADqHGkAAAA",
+            "receivedDateTime": "2022-06-30T07:17:07Z",
+            "subject": "New sign-in detected for your Microsoft account",
+            "isRead": false,
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft account team",
+                    "address": "account-security-noreply@accountprotection.microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADCrlVr7+RgQ71qiTgIRU65AAADpxth\"",
+            "id": "AQMkADAwATMwMAItNGZlYS05MWM2LTAwAi0wMAoARgAAA96mQ8Wgr4FDqvXbXsgOXvwHAMKuVWvv5GBDvWqJOAhFTrkAAAIBDAAAAMKuVWvv5GBDvWqJOAhFTrkAAAADqHGjAAAA",
+            "receivedDateTime": "2022-06-30T07:14:15Z",
+            "subject": "New sign-in detected for your Microsoft account",
+            "isRead": false,
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft account team",
+                    "address": "account-security-noreply@accountprotection.microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADCrlVr7+RgQ71qiTgIRU65AAADpxlt\"",
+            "id": "AQMkADAwATMwMAItNGZlYS05MWM2LTAwAi0wMAoARgAAA96mQ8Wgr4FDqvXbXsgOXvwHAMKuVWvv5GBDvWqJOAhFTrkAAAIBDAAAAMKuVWvv5GBDvWqJOAhFTrkAAAADqHGiAAAA",
+            "receivedDateTime": "2022-06-30T07:12:32Z",
+            "subject": "New sign-in detected for your Microsoft account",
+            "isRead": false,
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft account team",
+                    "address": "account-security-noreply@accountprotection.microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADCrlVr7+RgQ71qiTgIRU65AAADpxHk\"",
+            "id": "AQMkADAwATMwMAItNGZlYS05MWM2LTAwAi0wMAoARgAAA96mQ8Wgr4FDqvXbXsgOXvwHAMKuVWvv5GBDvWqJOAhFTrkAAAIBDAAAAMKuVWvv5GBDvWqJOAhFTrkAAAADqHGhAAAA",
+            "receivedDateTime": "2022-06-29T22:48:07Z",
+            "subject": "Testing Microsoft Graph",
+            "isRead": true,
+            "from": {
+                "emailAddress": {
+                    "name": "Christopher Lo",
+                    "address": "testceelo777@outlook.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADCrlVr7+RgQ71qiTgIRU65AAADpxHF\"",
+            "id": "AQMkADAwATMwMAItNGZlYS05MWM2LTAwAi0wMAoARgAAA96mQ8Wgr4FDqvXbXsgOXvwHAMKuVWvv5GBDvWqJOAhFTrkAAAIBDAAAAMKuVWvv5GBDvWqJOAhFTrkAAAADqHGgAAAA",
+            "receivedDateTime": "2022-06-29T22:47:57Z",
+            "subject": "Testing Microsoft Graph",
+            "isRead": false,
+            "from": {
+                "emailAddress": {
+                    "name": "Christopher Lo",
+                    "address": "testceelo777@outlook.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADCrlVr7+RgQ71qiTgIRU65AAADpxG9\"",
+            "id": "AQMkADAwATMwMAItNGZlYS05MWM2LTAwAi0wMAoARgAAA96mQ8Wgr4FDqvXbXsgOXvwHAMKuVWvv5GBDvWqJOAhFTrkAAAIBDAAAAMKuVWvv5GBDvWqJOAhFTrkAAAADqHGfAAAA",
+            "receivedDateTime": "2022-06-29T22:47:52Z",
+            "subject": "New sign-in detected for your Microsoft account",
+            "isRead": false,
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft account team",
+                    "address": "account-security-noreply@accountprotection.microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADCrlVr7+RgQ71qiTgIRU65AAADpw+t\"",
+            "id": "AQMkADAwATMwMAItNGZlYS05MWM2LTAwAi0wMAoARgAAA96mQ8Wgr4FDqvXbXsgOXvwHAMKuVWvv5GBDvWqJOAhFTrkAAAIBDAAAAMKuVWvv5GBDvWqJOAhFTrkAAAADqHGeAAAA",
+            "receivedDateTime": "2022-06-29T21:30:20Z",
+            "subject": "Save and share simply with OneDrive and your Microsoft account",
+            "isRead": false,
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft Account",
+                    "address": "email@engage.windows.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADCrlVr7+RgQ71qiTgIRU65AAAAAATC\"",
+            "id": "AQMkADAwATMwMAItNGZlYS05MWM2LTAwAi0wMAoARgAAA96mQ8Wgr4FDqvXbXsgOXvwHAMKuVWvv5GBDvWqJOAhFTrkAAAIBDAAAAMKuVWvv5GBDvWqJOAhFTrkAAAIFZAAAAA==",
+            "receivedDateTime": "2022-06-23T19:15:39Z",
+            "subject": "New sign-in detected for your Microsoft account",
+            "isRead": false,
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft account team",
+                    "address": "account-security-noreply@accountprotection.microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADCrlVr7+RgQ71qiTgIRU65AAAAAAS8\"",
+            "id": "AQMkADAwATMwMAItNGZlYS05MWM2LTAwAi0wMAoARgAAA96mQ8Wgr4FDqvXbXsgOXvwHAMKuVWvv5GBDvWqJOAhFTrkAAAIBDAAAAMKuVWvv5GBDvWqJOAhFTrkAAAIFYwAAAA==",
+            "receivedDateTime": "2022-06-23T19:15:36Z",
+            "subject": "New app(s) connected to your Microsoft account",
+            "isRead": false,
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft account team",
+                    "address": "account-security-noreply@accountprotection.microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADCrlVr7+RgQ71qiTgIRU65AAAAAAKU\"",
+            "id": "AQMkADAwATMwMAItNGZlYS05MWM2LTAwAi0wMAoARgAAA96mQ8Wgr4FDqvXbXsgOXvwHAMKuVWvv5GBDvWqJOAhFTrkAAAIBDAAAAMKuVWvv5GBDvWqJOAhFTrkAAAIFXgAAAA==",
+            "receivedDateTime": "2022-06-23T19:14:50Z",
+            "subject": "Welcome to your new Outlook.com account",
+            "isRead": false,
+            "from": {
+                "emailAddress": {
+                    "name": "Outlook Team",
+                    "address": "no-reply@microsoft.com"
+                }
+            }
+        }
+    ]
+}

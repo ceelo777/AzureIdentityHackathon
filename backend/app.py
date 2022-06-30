@@ -1,14 +1,15 @@
-import tensorflow_text
+# import tensorflow_text
 import numpy as np
 from flask import Flask, render_template, request
 import os
 import configparser
 from graph import Graph
 from main import greet_user
-import tensorflow as tf 
-from tensorflow import keras 
-from keras.models import load_model
-import tensorflow_hub as hub
+import json
+# import tensorflow as tf 
+# from tensorflow import keras 
+# from keras.models import load_model
+# import tensorflow_hub as hub
 
 os.environ['KMP_DUPLICATE_LIB_OK']='True'
 from flask_cors import CORS, cross_origin
@@ -64,8 +65,11 @@ def flaggedEmails():
 @cross_origin()
 def showEmails(): 
     resp = graph.get_inbox()
-    print("Inbox: ", resp)
-    return resp
+    json_string = json.dumps(resp)
+    print(json_string)
+    with open('json_data.json', 'w') as outfile:
+        outfile.write(json_string)
+    return "complete"
 
 if __name__ == "__main__":
     config = configparser.ConfigParser()
