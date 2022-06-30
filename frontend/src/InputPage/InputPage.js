@@ -20,6 +20,7 @@ class InputPage extends React.Component {
             console.log("Password found: ", word);
         }
       });
+      this.setState({value: "<div>hello</div>"});      
     }
   
     handleSubmit(event) {

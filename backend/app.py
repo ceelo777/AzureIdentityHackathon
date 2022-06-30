@@ -56,10 +56,6 @@ def flaggedEmails():
 
 @app.route("/showInbox", methods=["POST"])
 @cross_origin()
-def dummy():
-    print("hi")
-
-
 def showEmails(): 
     config = configparser.ConfigParser()
     config.read(['config.cfg', 'config.dev.cfg'])
@@ -71,9 +67,6 @@ def showEmails():
 
     return graph.get_inbox()
 
-
-
 if __name__ == "__main__":
-
     showEmails()
     app.run()
