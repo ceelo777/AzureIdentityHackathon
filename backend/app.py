@@ -1,3 +1,5 @@
+import tensorflow_text
+import numpy as np
 from flask import Flask, render_template, request
 import os
 import configparser
@@ -31,7 +33,7 @@ def receive():
 def flaggedEmails(): 
     #receives array of emails, returns three dictionary/arrays of all emails marked red or green, and flagged vs. unflagged
     model = load_model("mymodel.h5", custom_objects={'KerasLayer':hub.KerasLayer})
-    model._make_predict_function()
+    model.make_predict_function()
     good_emails = []
     bad_emails = []
 
@@ -40,6 +42,7 @@ def flaggedEmails():
         #myEmails = request.json['text']
         myEmails = ['hello my name is chris']
         for email in myEmails: 
+            email = np.array([email])
             preds = model.predict(email)
             if preds[0][0] > 0.5: 
                 bad_emails.append(email)
@@ -55,7 +58,7 @@ def flaggedEmails():
             mydict[email] = 'red'
     
     print(mydict, good_emails, bad_emails)
-    return (mydict, good_emails, bad_emails)
+    return mydict
 
 @app.route("/showInbox", methods=["GET"])
 @cross_origin()
