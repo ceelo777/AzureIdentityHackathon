@@ -6,6 +6,7 @@ import configparser
 from graph import Graph
 from main import greet_user
 import json
+import random
 import re
 # import tensorflow as tf 
 # from tensorflow import keras 
@@ -44,7 +45,11 @@ def receive():
             isPasswordDict[word] = False
             
     print(isPasswordDict)
-    
+    json_string = json.dumps(isPasswordDict)
+    print(json_string)
+    with open('../frontend/src/password_json_data.json', 'w') as outfile:
+        outfile.write(json_string)    
+
 #    if request.method == 'POST':
 #        print(request.json['text'])
 
@@ -54,11 +59,10 @@ def receive():
 @cross_origin()
 def flaggedEmails(): 
     #receives array of emails, returns three dictionary/arrays of all emails marked red or green, and flagged vs. unflagged
-    model = load_model("mymodel.h5", custom_objects={'KerasLayer':hub.KerasLayer})
-    model.make_predict_function()
+    # model = load_model("mymodel.h5", custom_objects={'KerasLayer':hub.KerasLayer})
+    # model.make_predict_function()
     good_emails = []
     bad_emails = []
-
     
     if request.method == 'GET': 
         #myEmails = request.json['text']
@@ -66,12 +70,12 @@ def flaggedEmails():
         data = None
         with open('json_data.json') as f:
             data = json.load(f)
-            for val in data.value:
-                myEmails.append(val.subject)
+            for val in data['value']:
+                myEmails.append(val['subject'])
         for email in myEmails: 
             email = np.array([email])
-            preds = model.predict(email)
-            if preds[0][0] > 0.5: 
+            # preds = model.predict(email)
+            if random.randint(0, 1) > 0.5: 
                 bad_emails.append(email)
             else: 
                 good_emails.append(email)
@@ -85,6 +89,10 @@ def flaggedEmails():
             mydict[email] = 'red'
     
     print(mydict, good_emails, bad_emails)
+
+    json_string = json.dumps(mydict)
+    with open('../frontend/src/json_data_status.json', 'w') as outfile:
+        outfile.write(json_string)
     return mydict
 
 @app.route("/showInbox", methods=["GET"])

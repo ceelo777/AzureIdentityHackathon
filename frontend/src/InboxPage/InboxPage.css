@@ -1,14 +1,18 @@
 .table-form {
     width: 80%;
-    margin: 5% auto auto auto;
+    margin: auto auto auto auto;
     background-color: white;
+}
+
+form {
+    height: 100%;
 }
 
 .subject-header {
     font-size: 2rem;
 }
 
-table {        
+table {
     width: 100%;
     border-collapse: collapse;
 }
@@ -17,4 +21,18 @@ tr {
     border: solid;
     height: 2vw;
     border-width: 1px 0;
+}
+
+.submit-div-button {    
+    width: 40%;
+    height: 3vw;
+    margin: 1% auto auto auto;
+}
+
+.inbox-page-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto auto auto;
 }

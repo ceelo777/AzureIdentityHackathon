@@ -56,6 +56,7 @@ input {
     border-width: 1px;
     height: 500px;
     width: 500px;
+    padding: 20px;
 }
 
 .component-div {
