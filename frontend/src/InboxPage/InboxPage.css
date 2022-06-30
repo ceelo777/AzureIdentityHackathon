@@ -1,3 +1,20 @@
 .table-form {
-    margin: auto;
+    width: 80%;
+    margin: 5% auto auto auto;
+    background-color: white;
+}
+
+.subject-header {
+    font-size: 2rem;
+}
+
+table {        
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border: solid;
+    height: 2vw;
+    border-width: 1px 0;
 }

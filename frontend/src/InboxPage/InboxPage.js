@@ -28,7 +28,13 @@ class InboxPage extends React.Component {
     console.log("Data: ", data);
     let listItems = [];
     data.value.forEach(entry => {
-      listItems.push(<tr>{entry.subject}</tr>)
+      listItems.push(        
+          <tr>
+            <td>{entry.from.emailAddress.name}</td>              
+            <td>{entry.from.emailAddress.address}</td>                      
+            <td>{entry.subject}</td>
+          </tr>  
+      )        
     });
     // Email Address: {entry.from.emailAddress.address} - Data: {entry.subject}        
     //let listItems = ; 
@@ -36,6 +42,11 @@ class InboxPage extends React.Component {
     return (
       <div className="table-form">
         <table>
+          <tr className="subject-header">
+            <td>Names</td>
+            <td>Email Addresses</td>
+            <td>Emails</td>
+          </tr>          
           {listItems}
         </table>      
       </div>
