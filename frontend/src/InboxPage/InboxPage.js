@@ -57,7 +57,7 @@ class InboxPage extends React.Component {
           <tr className={this.state.status[keys[idx]]}>
             <td>{entry.from.emailAddress.name}</td>              
             <td>{entry.from.emailAddress.address}</td>                      
-            <td>{entry.subject}</td>                        
+            <td>{entry.subject}</td>
           </tr>  
       )        
       idx++;

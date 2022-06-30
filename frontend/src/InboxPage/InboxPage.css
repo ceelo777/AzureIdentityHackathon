@@ -1,5 +1,6 @@
 .table-form {
     width: 80%;
+    border-radius: 50px;
     margin: auto auto auto auto;
     background-color: white;
 }
@@ -13,7 +14,8 @@ form {
 }
 
 table {
-    width: 100%;
+    width: 85%;
+    margin: auto;
     border-collapse: collapse;
 }
 

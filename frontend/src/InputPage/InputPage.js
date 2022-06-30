@@ -37,7 +37,9 @@ class InputPage extends React.Component {
       // console.log(this.state.status);
       let listItems = [];
       for (const [key, value] of Object.entries(this.state.status)) {
-        listItems.push(<p>{key} - {value.toString()}</p>);
+        if (value) {
+          listItems.push(<p>{key} - {value.toString()}</p>);
+        }
       }
        
       return (
