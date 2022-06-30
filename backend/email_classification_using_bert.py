@@ -245,7 +245,7 @@ cp_callback = tf.keras.callbacks.ModelCheckpoint(
     filepath=checkpoint_path, 
     verbose=1, 
     save_weights_only=True,
-    save_freq=5)
+    save_freq=2*71)
 """##  Training Model
 - Recomended to use `GPU` - providing so many training data
 
@@ -256,7 +256,7 @@ cp_callback = tf.keras.callbacks.ModelCheckpoint(
 # Commented out IPython magic to ensure Python compatibility.
 # %tensorboard --logdir logs/fit
 model.save_weights(checkpoint_path.format(epoch=0))
-history = model.fit(X_train, y_train, epochs = 10 , callbacks = [tensorboard_callback, cp_callback])
+history = model.fit(X_train, y_train, epochs = 5 , callbacks = [tensorboard_callback, cp_callback])
 
 """# Model Evaluation 
 
