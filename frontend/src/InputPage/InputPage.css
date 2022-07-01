@@ -1,7 +1,6 @@
 .form-div {
     height: 500px;
-    width: 500px; 
-    margin-top: -18rem;   
+    width: 500px;  
     /* margin: 10% auto auto auto;    */
 }
 
@@ -11,8 +10,8 @@ form {
 }
 
 textarea {
-    height: 800px;
-    width: 800px;
+    height: 500px;
+    width: 500px;
     background-color: white;
 }
 
@@ -47,8 +46,7 @@ input {
 .submit-button {    
     width: 40%;
     height: 10%;
-    margin: 5% auto auto auto;
-    margin-left: 58%;
+    margin: 5% auto auto auto;    
 }
 
 .output-div {
@@ -56,9 +54,9 @@ input {
     border-color: black;  
     border-width: 1px;
     border-radius: 50px;
-    height: 800px;
+    height: 500px;
     font-size: 20px;
-    width: 800px;
+    width: 500px;
     padding: 20px;
     -moz-box-shadow:    3px 3px 10px 6px #ccc;
     -webkit-box-shadow: 3px 3px 10px 6px #ccc;
